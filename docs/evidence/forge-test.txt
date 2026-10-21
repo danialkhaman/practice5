@@ -1,0 +1,51 @@
+No files changed, compilation skipped
+
+Ran 13 tests for test/MaintenanceRegistry.t.sol:MaintenanceRegistryTest
+[PASS] testFuzz_OnlyTechnicianCanRegister(address) (runs: 1000, μ: 53711, ~: 53711)
+[PASS] testFuzz_RegisterService_StoresData(bytes32,uint32,uint64,bytes32) (runs: 1000, μ: 143409, ~: 143627)
+[PASS] test_Pause_BlocksRegister() (gas: 238928)
+[PASS] test_Pause_OnlyAdmin() (gas: 36942)
+[PASS] test_RegisterService_EmitsEvent() (gas: 134146)
+[PASS] test_RegisterService_RevertIfNotTechnician() (gas: 38240)
+[PASS] test_RegisterService_RevertOnEmptyMachineId() (gas: 37733)
+[PASS] test_RegisterService_RevertOnFutureTimestamp() (gas: 38402)
+[PASS] test_RegisterService_RevertOnZeroCode() (gas: 37828)
+[PASS] test_RegisterService_Success() (gas: 156523)
+[PASS] test_RevokeLastService_OnlyAdmin() (gas: 222121)
+[PASS] test_RevokeLastService_RevertOnDoubleRevoke() (gas: 214328)
+[PASS] test_VerifyDocument() (gas: 144242)
+Suite result: ok. 13 passed; 0 failed; 0 skipped; finished in 58.52ms (108.67ms CPU time)
+
+Ran 3 tests for test/Security.fuzz.t.sol:SecurityFuzzTest
+[PASS] testFuzz_F1_NoRoleCannotWrite(address,bytes32,uint32,uint64) (runs: 1000, μ: 104835, ~: 104777)
+[PASS] testFuzz_F2_RegisterRoundTrip(bytes32,uint32,uint64,bytes32,bytes32) (runs: 1000, μ: 175245, ~: 175355)
+[PASS] testFuzz_F3_FutureTimestampAlwaysReverts(uint64) (runs: 1000, μ: 38428, ~: 38372)
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 58.55ms (157.84ms CPU time)
+
+Ran 1 test for test/Security.invariant.t.sol:SecurityInvariantTest
+[PASS]
+SecurityInvariantTest invariants:
+[PASS] invariant_I1_OnlyAuthorizedRolesChangeState
+[PASS] invariant_I2_CountersConsistent
+[PASS] invariant_I3_PauseBlocksWrites
+ SecurityInvariantTest invariants (runs: 256, calls: 16384, reverts: 0)
+
+╭-----------------+----------+-------+---------+----------╮
+| Contract        | Selector | Calls | Reverts | Discards |
++=========================================================+
+| SecurityHandler | pause    | 4052  | 0       | 0        |
+|-----------------+----------+-------+---------+----------|
+| SecurityHandler | register | 4147  | 0       | 0        |
+|-----------------+----------+-------+---------+----------|
+| SecurityHandler | revoke   | 4119  | 0       | 0        |
+|-----------------+----------+-------+---------+----------|
+| SecurityHandler | unpause  | 4066  | 0       | 0        |
+╰-----------------+----------+-------+---------+----------╯
+
+Logs:
+  calls register/revoke/pause/unpause: 6 20 15
+  successful registrations: 3 unpause calls: 24
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 2.98s (2.96s CPU time)
+
+Ran 3 test suites in 2.99s (3.10s CPU time): 17 tests passed, 0 failed, 0 skipped (17 total tests)

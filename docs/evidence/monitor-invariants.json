@@ -1,0 +1,1 @@
+{"ts":"2026-10-21T15:40:23.299Z","source":"monitor","category":"invariant","event":"invariants.checked","correlationId":null,"I1":true,"I2":true,"I3":true,"events":15,"block":17,"details":{"I1":[],"I2":["totalRecords=4 = событий 4 = Σ serviceCount 4 (4 станков)"],"I3":["интервалов паузы: 0, регистраций на паузе: 0"]}}

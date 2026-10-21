@@ -1,0 +1,125 @@
+
+> mr5-web@1.0.0 monitor
+> node --env-file-if-exists=../.env monitor/monitor.mjs
+
+Монитор MaintenanceRegistry: контракт 0x5FbDB2315678afecb367f032d93F642f64180aa3, RPC http://127.0.0.1:8545, опрос 1000 мс, таймаут RPC 3000 мс
+Коллектор журнала dApp: http://localhost:8787/telemetry · журналы: /home/ubuntu/mr5/web/monitor/logs/telemetry.jsonl, /home/ubuntu/mr5/web/monitor/logs/alerts.jsonl
+  R1 «Попытки нарушения доступа»: порог 3 за 300 с, HIGH, повтор не чаще 1 раза в 600 с
+  R2 «Эксплуатационный сбой RPC/узла»: порог 3 за 60 с, MEDIUM, повтор не чаще 1 раза в 300 с
+
+15:32:22.672 [receipt] блок 2 grantRole from=0xf39Fd6 status=1 gas=51432 cid=tx:0x067
+15:32:22.674 [event]   блок 2 RoleGranted tx=0x0678db65#0 cid=tx:0x067
+15:32:22.680 [receipt] блок 3 grantRole from=0xf39Fd6 status=1 gas=51432 cid=tx:0x638
+15:32:22.680 [event]   блок 3 RoleGranted tx=0x638b405f#0 cid=tx:0x638
+15:32:22.688 [receipt] блок 4 grantRole from=0xf39Fd6 status=1 gas=51432 cid=tx:0xdbd
+15:32:22.689 [event]   блок 4 RoleGranted tx=0xdbdd071f#0 cid=tx:0xdbd
+15:32:22.694 [receipt] блок 5 grantRole from=0xf39Fd6 status=1 gas=51432 cid=tx:0xce0
+15:32:22.695 [event]   блок 5 RoleGranted tx=0xce0f9e27#0 cid=tx:0xce0
+15:32:22.700 [receipt] блок 6 grantRole from=0xf39Fd6 status=1 gas=51432 cid=tx:0x94c
+15:32:22.701 [event]   блок 6 RoleGranted tx=0x94c5d45b#0 cid=tx:0x94c
+15:32:22.706 [receipt] блок 7 grantRole from=0xf39Fd6 status=1 gas=51432 cid=tx:0xa4a
+15:32:22.706 [event]   блок 7 RoleGranted tx=0xa4a0e447#0 cid=tx:0xa4a
+15:32:32.775 [app]     tx.checking registerService   cid=aeea304e
+15:32:32.785 [app]     tx.signing registerService   cid=aeea304e
+15:32:32.837 [app]     tx.sent registerService  tx=0x105fc64f cid=aeea304e
+15:32:32.838 [app]     tx.confirming registerService  tx=0x105fc64f cid=aeea304e
+15:32:32.857 [app]     tx.success registerService  tx=0x105fc64f cid=aeea304e
+15:32:33.273 [app]     tx.checking registerService   cid=db59f58d
+15:32:33.285 [app]     tx.signing registerService   cid=db59f58d
+15:32:33.333 [app]     tx.sent registerService  tx=0x6788766e cid=db59f58d
+15:32:33.334 [app]     tx.confirming registerService  tx=0x6788766e cid=db59f58d
+15:32:33.349 [app]     tx.success registerService  tx=0x6788766e cid=db59f58d
+15:32:33.746 [receipt] блок 8 registerService from=0x709979 status=1 gas=120866 cid=aeea304e
+15:32:33.747 [event]   блок 8 ServiceRegistered tx=0x105fc64f#0 cid=aeea304e
+15:32:33.752 [receipt] блок 9 registerService from=0x709979 status=1 gas=103778 cid=db59f58d
+15:32:33.753 [event]   блок 9 ServiceRegistered tx=0x6788766e#0 cid=db59f58d
+15:32:33.764 [app]     tx.checking registerService   cid=8be2f2f8
+15:32:33.776 [app]     tx.signing registerService   cid=8be2f2f8
+15:32:33.824 [app]     tx.sent registerService  tx=0x10791529 cid=8be2f2f8
+15:32:33.824 [app]     tx.confirming registerService  tx=0x10791529 cid=8be2f2f8
+15:32:33.837 [app]     tx.success registerService  tx=0x10791529 cid=8be2f2f8
+15:32:34.240 [app]     tx.checking revokeLastService   cid=bf298e1d
+15:32:34.252 [app]     tx.signing revokeLastService   cid=bf298e1d
+15:32:34.300 [app]     tx.sent revokeLastService  tx=0x8d4d4d37 cid=bf298e1d
+15:32:34.301 [app]     tx.confirming revokeLastService  tx=0x8d4d4d37 cid=bf298e1d
+15:32:34.314 [app]     tx.success revokeLastService  tx=0x8d4d4d37 cid=bf298e1d
+15:32:34.718 [app]     tx.checking pause   cid=c6df2a69
+15:32:34.733 [app]     tx.error pause AccessControlUnauthorizedAccount  cid=c6df2a69
+15:32:34.760 [receipt] блок 10 registerService from=0x709979 status=1 gas=103790 cid=8be2f2f8
+15:32:34.760 [event]   блок 10 ServiceRegistered tx=0x10791529#0 cid=8be2f2f8
+15:32:34.765 [receipt] блок 11 revokeLastService from=0xf39Fd6 status=1 gas=50084 cid=bf298e1d
+15:32:34.766 [event]   блок 11 ServiceRevoked tx=0x8d4d4d37#0 cid=bf298e1d
+15:33:32.884 [app]     wallet.connected    cid=37262393
+15:33:35.241 [app]     tx.checking registerService   cid=aa150ef7
+15:33:35.278 [app]     tx.signing registerService   cid=aa150ef7
+15:33:36.088 [app]     tx.sent registerService  tx=0x4bdfedd2 cid=aa150ef7
+15:33:36.090 [app]     tx.confirming registerService  tx=0x4bdfedd2 cid=aa150ef7
+15:33:36.135 [app]     tx.success registerService  tx=0x4bdfedd2 cid=aa150ef7
+15:33:36.964 [receipt] блок 12 registerService from=0x709979 status=1 gas=103802 cid=aa150ef7
+15:33:36.965 [event]   блок 12 ServiceRegistered tx=0x4bdfedd2#0 cid=aa150ef7
+15:33:39.400 [app]     tx.checking registerService   cid=8cfa00a3
+15:33:39.440 [app]     tx.signing registerService   cid=8cfa00a3
+15:33:39.483 [app]     tx.error registerService UserRejected  cid=8cfa00a3
+15:33:40.470 [app]     wallet.chain_changed   
+15:33:41.631 [app]     wallet.chain_changed   
+15:33:43.181 [app]     wallet.account_changed   
+15:33:44.735 [app]     tx.checking pause   cid=1b6cb9dd
+15:33:44.782 [app]     tx.error pause AccessControlUnauthorizedAccount  cid=1b6cb9dd
+15:33:46.184 [app]     wallet.account_changed   
+15:33:47.774 [app]     tx.checking pause   cid=a60d7370
+15:33:47.798 [app]     tx.signing pause   cid=a60d7370
+15:33:47.852 [app]     tx.sent pause  tx=0x5bceaf81 cid=a60d7370
+15:33:47.852 [app]     tx.confirming pause  tx=0x5bceaf81 cid=a60d7370
+15:33:47.913 [app]     tx.error pause AccessControlUnauthorizedAccount tx=0x5bceaf81 cid=a60d7370
+15:33:48.015 [receipt] блок 13 pause from=0x709979 status=0 AccessControlUnauthorizedAccount gas=23746 cid=a60d7370
+15:33:55.297 [app]     wallet.account_changed   
+15:33:56.884 [app]     tx.checking revokeLastService   cid=7b338f8d
+15:33:56.936 [app]     tx.signing revokeLastService   cid=7b338f8d
+15:33:56.996 [app]     tx.sent revokeLastService  tx=0xd3071e70 cid=7b338f8d
+15:33:56.998 [app]     tx.confirming revokeLastService  tx=0xd3071e70 cid=7b338f8d
+15:33:57.048 [receipt] блок 14 revokeLastService from=0xf39Fd6 status=1 gas=50060 cid=7b338f8d
+15:33:57.049 [event]   блок 14 ServiceRevoked tx=0xd3071e70#0 cid=7b338f8d
+15:33:57.049 [app]     tx.success revokeLastService  tx=0xd3071e70 cid=7b338f8d
+15:34:01.690 [app]     wallet.session_ended   
+15:34:28.149 [receipt] блок 15 pause from=0x3C44Cd status=0 AccessControlUnauthorizedAccount gas=23746 cid=tx:0xe08
+15:39:45.499 [app]     tx.checking registerService   cid=99c5ee16
+15:39:45.523 [app]     tx.error registerService AccessControlUnauthorizedAccount  cid=99c5ee16
+15:39:45.922 [app]     tx.checking pause   cid=577042b4
+15:39:45.937 [app]     tx.error pause AccessControlUnauthorizedAccount  cid=577042b4
+15:39:46.348 [app]     tx.checking revokeLastService   cid=e941f844
+15:39:46.349 [app]     tx.signing revokeLastService   cid=e941f844
+15:39:46.387 [app]     tx.sent revokeLastService  tx=0xcf9314eb cid=e941f844
+15:39:46.388 [app]     tx.confirming revokeLastService  tx=0xcf9314eb cid=e941f844
+15:39:46.417 [app]     tx.error revokeLastService AccessControlUnauthorizedAccount tx=0xcf9314eb cid=e941f844
+
+🚨 ALERT R1-1 [HIGH] R1 «Попытки нарушения доступа»
+   субъект: 0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc
+   сигналов: 3 (порог 3 за 300 с), с 2026-10-21T15:39:45.523Z по 2026-10-21T15:39:46.417Z
+   доказательство: 0xcf9314eb3df2617fdb4afbe16cd10768e70d9305fe113b36f9698d846f1a4d41
+   реакция: Оповестить администратора; проверить адрес и выданные роли; при продолжении — pause() и отзыв ролей у скомпрометированных аккаунтов.
+   повторные уведомления подавляются 600 с
+
+15:39:46.821 [app]     tx.checking pause   cid=9b0f5c26
+15:39:46.821 [app]     tx.signing pause   cid=9b0f5c26
+15:39:46.859 [app]     tx.sent pause  tx=0xb9fa8955 cid=9b0f5c26
+15:39:46.860 [app]     tx.confirming pause  tx=0xb9fa8955 cid=9b0f5c26
+15:39:46.884 [app]     tx.error pause AccessControlUnauthorizedAccount tx=0xb9fa8955 cid=9b0f5c26
+15:39:46.884 [alert]   повтор R1 по 0x3c44cddd подавлен (тревога R1-1, подавлено 1, до повторной отправки 600 с)
+15:39:47.127 [receipt] блок 16 revokeLastService from=0x3C44Cd status=0 AccessControlUnauthorizedAccount gas=23999 cid=e941f844
+15:39:47.135 [receipt] блок 17 pause from=0x3C44Cd status=0 AccessControlUnauthorizedAccount gas=23746 cid=9b0f5c26
+15:40:00.164 [rpc]     rpc.error eth_blockNumber TIMEOUT request timeout
+15:40:04.170 [rpc]     rpc.error eth_blockNumber TIMEOUT request timeout
+15:40:08.176 [rpc]     rpc.error eth_blockNumber TIMEOUT request timeout
+
+🚨 ALERT R2-2 [MEDIUM] R2 «Эксплуатационный сбой RPC/узла»
+   субъект: http://127.0.0.1:8545
+   сигналов: 3 (порог 3 за 60 с), с 2026-10-21T15:40:00.164Z по 2026-10-21T15:40:08.176Z
+   доказательство: null
+   реакция: Оповестить дежурного; переключить клиентов на резервный RPC; проверить процесс узла; после восстановления — уведомление resolved.
+   повторные уведомления подавляются 300 с
+
+15:40:11.310 [rpc]     rpc.recovered eth_blockNumber  
+
+✔ RESOLVED R2 «Эксплуатационный сбой RPC/узла»: http://127.0.0.1:8545, простой 14150 мс, подавлено повторов: 0
+
+15:40:23.299 [inv]     I1=true I2=true I3=true (событий 15, блок 17)

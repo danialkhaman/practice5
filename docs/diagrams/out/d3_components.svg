@@ -1,0 +1,350 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2860" height="2280" viewBox="0 0 2860 2280"><defs><marker id="a0f7a8a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f7a8a"/></marker><marker id="s0f7a8a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f7a8a"/></marker><marker id="a1d2433" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1d2433"/></marker><marker id="s1d2433" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1d2433"/></marker><marker id="a344054" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#344054"/></marker><marker id="s344054" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#344054"/></marker><marker id="a9a6400" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9a6400"/></marker><marker id="s9a6400" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9a6400"/></marker><marker id="a2856d8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2856d8"/></marker><marker id="s2856d8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2856d8"/></marker><marker id="a6b3fd6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b3fd6"/></marker><marker id="s6b3fd6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b3fd6"/></marker><marker id="ac0362c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c0362c"/></marker><marker id="sc0362c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c0362c"/></marker><marker id="a667085" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#667085"/></marker><marker id="s667085" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#667085"/></marker><marker id="a137a3f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#137a3f"/></marker><marker id="s137a3f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#137a3f"/></marker></defs><rect width="2860" height="2280" fill="#ffffff"/>
+<text x="40.0" y="52.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="30" font-weight="700" fill="#1d2433" text-anchor="start">Архитектура · уровень 3 — компоненты dApp, смарт-контракта и мониторинга</text>
+<text x="40.0" y="86.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="400" fill="#5b6474" text-anchor="start">Модули репозитория mr5, связи между ними и место каждой проверки (подсказка → блокировка на клиенте → авторитетная проверка в контракте → обнаружение)</text>
+<rect x="30" y="140" width="990" height="1400" rx="16" fill="#eef3ff" fill-opacity="1" stroke="#c0362c" stroke-width="2.2" stroke-dasharray="10 6"/>
+<rect x="48" y="126" width="36.295199999999994" height="28" rx="14" fill="#c0362c" fill-opacity="1" stroke="#c0362c" stroke-width="1.5"/>
+<text x="66.1" y="145.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">C1</text>
+<rect x="94.2952" y="126" width="261.0560000000001" height="28" rx="14" fill="#fff" fill-opacity="1" stroke="#c0362c" stroke-width="1.5"/>
+<text x="104.3" y="145.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="600" fill="#c0362c" text-anchor="start">dApp: web/src + web/shared</text>
+<text x="50.0" y="176.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="start" font-style="italic">выполняется в браузере пользователя (TB1)</text>
+<rect x="60" y="200" width="440" height="330" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="60" y="200" width="440" height="30" rx="12" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<rect x="60" y="216" width="440" height="14" rx="0" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<text x="74.0" y="221.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">src/App.jsx · React 19</text>
+<text x="74.0" y="256.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#1d2433" text-anchor="start">App.jsx — интерфейс</text>
+<text x="74.0" y="279.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">Шапка: адрес, chainId, «Завершить сеанс»</text>
+<text x="74.0" y="301.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">Чтение: totalRecords, paused, роли (hasRole)</text>
+<text x="74.0" y="322.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">getLastService + serviceCount по станку</text>
+<text x="74.0" y="344.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">verifyDocument: keccak256(файла)</text>
+<text x="74.0" y="365.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">Формы: registerService, revoke, pause,</text>
+<text x="74.0" y="387.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">unpause, grantRole(TECHNICIAN)</text>
+<text x="74.0" y="408.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">Ход транзакции: 4 этапа + итог</text>
+<text x="74.0" y="430.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">Лента событий, прикладной журнал</text>
+<rect x="550" y="200" width="440" height="230" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="550" y="200" width="440" height="30" rx="12" fill="#6b3fd6" fill-opacity="1" stroke="#6b3fd6" stroke-width="1.5"/>
+<rect x="550" y="216" width="440" height="14" rx="0" fill="#6b3fd6" fill-opacity="1" stroke="#6b3fd6" stroke-width="1.5"/>
+<text x="564.0" y="221.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">src/wallet.js</text>
+<text x="564.0" y="256.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">wallet.js — кошелёк (EIP-1193)</text>
+<text x="564.0" y="279.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">requestAccount → eth_requestAccounts</text>
+<text x="564.0" y="300.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">readChainId → eth_chainId</text>
+<text x="564.0" y="321.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">revokeSession → wallet_revokePermissions</text>
+<text x="564.0" y="342.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">switchToAnvil → wallet_switchEthereumChain</text>
+<text x="564.0" y="363.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  4902 → wallet_addEthereumChain</text>
+<rect x="60" y="570" width="440" height="470" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="60" y="570" width="440" height="30" rx="12" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<rect x="60" y="586" width="440" height="14" rx="0" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<text x="74.0" y="591.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">shared/registry.js</text>
+<text x="74.0" y="626.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#1d2433" text-anchor="start">RegistryClient</text>
+<text x="74.0" y="649.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1d2433" text-anchor="start">Чтение (provider dApp)</text>
+<text x="74.0" y="669.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">totalRecords · paused · rolesOf</text>
+<text x="74.0" y="690.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">getLastService · serviceCount</text>
+<text x="74.0" y="711.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">verifyDocument</text>
+<text x="74.0" y="732.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1d2433" text-anchor="start">Запись (signer кошелька)</text>
+<text x="74.0" y="751.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">registerService · revokeLastService</text>
+<text x="74.0" y="772.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">pause · unpause · grantTechnician</text>
+<text x="74.0" y="793.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1d2433" text-anchor="start">sendTx(method, args, opts)</text>
+<text x="74.0" y="813.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#c0362c" text-anchor="start">1 assertNetwork()  chainId = 31337</text>
+<text x="74.0" y="834.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#c0362c" text-anchor="start">2 staticCall()     предпроверка</text>
+<text x="74.0" y="855.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">3 contract[method]() → подпись</text>
+<text x="74.0" y="876.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">4 tx.wait()        квитанция</text>
+<text x="74.0" y="897.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">5 status 0 → decodeFailedReceipt</text>
+<text x="74.0" y="918.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  onStage → UI и телеметрия</text>
+<rect x="550" y="470" width="440" height="250" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="550" y="470" width="440" height="30" rx="12" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<rect x="550" y="486" width="440" height="14" rx="0" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<text x="564.0" y="491.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">shared/errors.js</text>
+<text x="564.0" y="526.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">errors.js — классификация ошибок</text>
+<text x="564.0" y="549.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">decodeError(err) →</text>
+<text x="564.0" y="570.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  USER_REJECTED · WRONG_NETWORK</text>
+<text x="564.0" y="591.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  REVERT · RPC · UNKNOWN</text>
+<text x="564.0" y="612.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">поиск revert data в дереве ошибки</text>
+<text x="564.0" y="634.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">parseRevertData → custom error + args</text>
+<text x="564.0" y="655.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">сообщения для пользователя по-русски</text>
+<rect x="550" y="760" width="440" height="210" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="550" y="760" width="440" height="30" rx="12" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<rect x="550" y="776" width="440" height="14" rx="0" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<text x="564.0" y="781.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">shared/events.js</text>
+<text x="564.0" y="816.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">events.js — лента событий</text>
+<text x="564.0" y="839.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">fetchEvents → queryFilter(&#x27;*&#x27;, from, to)</text>
+<text x="564.0" y="860.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">EventFeed: Map((txHash, logIndex))</text>
+<text x="564.0" y="881.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">дубль → отбрасывается, счётчик дублей</text>
+<text x="564.0" y="903.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">6 типов: ServiceRegistered, …Revoked,</text>
+<text x="564.0" y="924.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">Paused, Unpaused, RoleGranted/Revoked</text>
+<rect x="550" y="1010" width="440" height="210" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="550" y="1010" width="440" height="30" rx="12" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<rect x="550" y="1026" width="440" height="14" rx="0" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<text x="564.0" y="1031.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">shared/telemetry.js</text>
+<text x="564.0" y="1066.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">telemetry.js — прикладной журнал</text>
+<text x="564.0" y="1089.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">createTelemetry({source, sinks})</text>
+<text x="564.0" y="1110.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">newCorrelationId() → UUID v4</text>
+<text x="564.0" y="1131.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">ts в UTC (ISO-8601), категория, событие</text>
+<text x="564.0" y="1153.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">redact: privateKey, mnemonic, password,</text>
+<text x="564.0" y="1174.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  secret, signature, token → [REDACTED]</text>
+<rect x="60" y="1080" width="440" height="190" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="60" y="1080" width="440" height="30" rx="12" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<rect x="60" y="1096" width="440" height="14" rx="0" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<text x="74.0" y="1101.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">shared/config.js · shared/abi.js</text>
+<text x="74.0" y="1136.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">config.js + abi.js</text>
+<text x="74.0" y="1159.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">EXPECTED_CHAIN_ID = 31337</text>
+<text x="74.0" y="1180.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">ROLES · SERVICE_CODES 101/201/301/401</text>
+<text x="74.0" y="1201.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">machineIdToBytes32 (≤ 31 ASCII)</text>
+<text x="74.0" y="1222.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">REGISTRY_ABI: функции, события, ошибки</text>
+<rect x="550" y="1260" width="440" height="190" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="550" y="1260" width="440" height="30" rx="12" fill="#137a3f" fill-opacity="1" stroke="#137a3f" stroke-width="1.5"/>
+<rect x="550" y="1276" width="440" height="14" rx="0" fill="#137a3f" fill-opacity="1" stroke="#137a3f" stroke-width="1.5"/>
+<text x="564.0" y="1281.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">shared/invariants.js</text>
+<text x="564.0" y="1316.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">invariants.js — проверка по журналу</text>
+<text x="564.0" y="1339.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">checkInvariants(provider, address)</text>
+<text x="564.0" y="1360.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">I1 роль инициатора на блоке события</text>
+<text x="564.0" y="1382.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">I2 totalRecords = событий = Σ serviceCount</text>
+<text x="564.0" y="1403.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">I3 нет регистраций между Paused/Unpaused</text>
+<rect x="60" y="1310" width="440" height="200" rx="12" fill="#f8faff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<text x="74.0" y="1338.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Внешние интерфейсы C1</text>
+<text x="74.0" y="1361.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#6b3fd6" text-anchor="start">window.ethereum   → MetaMask (подпись)</text>
+<text x="74.0" y="1382.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#2856d8" text-anchor="start">JsonRpcProvider   → RPC dApp (чтение)</text>
+<text x="74.0" y="1403.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#0f7a8a" text-anchor="start">fetch POST        → коллектор :8787</text>
+<text x="74.0" y="1424.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#667085" text-anchor="start">/deployment.json  → адрес контракта</text>
+<polyline points="500.0,300.0 550.0,300.0" fill="none" stroke="#344054" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a344054)"/>
+<polyline points="280.0,530.0 280.0,570.0" fill="none" stroke="#344054" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a344054)"/>
+<polyline points="500.0,640.0 550.0,640.0" fill="none" stroke="#344054" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a344054)"/>
+<polyline points="500.0,880.0 550.0,880.0" fill="none" stroke="#344054" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a344054)"/>
+<polyline points="500.0,1010.0 525.0,1010.0 525.0,1100.0 550.0,1100.0" fill="none" stroke="#0f7a8a" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a0f7a8a)"/>
+<polyline points="280.0,1040.0 280.0,1080.0" fill="none" stroke="#667085" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a667085)"/>
+<rect x="1060" y="140" width="720" height="1400" rx="16" fill="#e9f7ee" fill-opacity="1" stroke="#c0362c" stroke-width="2.2" stroke-dasharray="10 6"/>
+<rect x="1078" y="126" width="36.295199999999994" height="28" rx="14" fill="#c0362c" fill-opacity="1" stroke="#c0362c" stroke-width="1.5"/>
+<text x="1096.1" y="145.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">C2</text>
+<rect x="1124.2952" y="126" width="265.0304000000001" height="28" rx="14" fill="#fff" fill-opacity="1" stroke="#c0362c" stroke-width="1.5"/>
+<text x="1134.3" y="145.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="600" fill="#c0362c" text-anchor="start">Смарт-контракт: contracts/</text>
+<text x="1080.0" y="176.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="start" font-style="italic">исполняется в EVM (TB4); тесты — Foundry</text>
+<rect x="1090" y="200" width="660" height="170" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="1090" y="200" width="660" height="30" rx="12" fill="#137a3f" fill-opacity="1" stroke="#137a3f" stroke-width="1.5"/>
+<rect x="1090" y="216" width="660" height="14" rx="0" fill="#137a3f" fill-opacity="1" stroke="#137a3f" stroke-width="1.5"/>
+<text x="1104.0" y="221.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">src/MaintenanceRegistry.sol · OpenZeppelin 5.7.0</text>
+<text x="1104.0" y="256.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">MaintenanceRegistry is AccessControl, Pausable</text>
+<text x="1104.0" y="279.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">AccessControl: _roles · hasRole · grantRole · onlyRole</text>
+<text x="1104.0" y="300.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  revert AccessControlUnauthorizedAccount(account, role)</text>
+<text x="1104.0" y="321.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">Pausable: _paused · whenNotPaused · EnforcedPause</text>
+<rect x="1090" y="400" width="660" height="520" rx="12" fill="#fff" fill-opacity="1" stroke="#c0362c" stroke-width="4"/>
+<text x="1104.0" y="428.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#1d2433" text-anchor="start">Функции и порядок проверок</text>
+<text x="1104.0" y="451.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#137a3f" text-anchor="start">registerService(machineId, code, ts, docHash)</text>
+<text x="1104.0" y="471.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#c0362c" text-anchor="start">  ① onlyRole(TECHNICIAN_ROLE)   AP5</text>
+<text x="1104.0" y="492.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#c0362c" text-anchor="start">  ② whenNotPaused               AP6</text>
+<text x="1104.0" y="513.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  ③ machineId ≠ 0 · code ≠ 0 · ts ≤ block.timestamp</text>
+<text x="1104.0" y="534.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  ④ lastService[m] = …; serviceCount[m]++; totalRecords++</text>
+<text x="1104.0" y="555.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  ⑤ emit ServiceRegistered(m, code, ts, docHash, sender)</text>
+<text x="1104.0" y="576.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#137a3f" text-anchor="start">revokeLastService(machineId)</text>
+<text x="1104.0" y="595.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#c0362c" text-anchor="start">  ① onlyRole(ADMIN_ROLE)  ② запись есть и не отозвана</text>
+<text x="1104.0" y="616.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  ③ revoked = true  ④ emit ServiceRevoked(m, sender)</text>
+<text x="1104.0" y="637.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#137a3f" text-anchor="start">pause() / unpause()</text>
+<text x="1104.0" y="657.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#c0362c" text-anchor="start">  onlyRole(ADMIN_ROLE) → emit Paused / Unpaused</text>
+<text x="1104.0" y="678.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#137a3f" text-anchor="start">grantRole / revokeRole</text>
+<text x="1104.0" y="697.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#c0362c" text-anchor="start">  onlyRole(getRoleAdmin(role)) → RoleGranted/Revoked</text>
+<text x="1104.0" y="718.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#137a3f" text-anchor="start">view: getLastService · verifyDocument · totalRecords …</text>
+<text x="1104.0" y="738.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#137a3f" text-anchor="start">Checks → Effects → Events; внешних вызовов нет</text>
+<rect x="1090" y="950" width="320" height="250" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<text x="1104.0" y="978.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Storage</text>
+<text x="1104.0" y="1001.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">lastService[bytes32]</text>
+<text x="1104.0" y="1022.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  → ServiceRecord</text>
+<text x="1104.0" y="1043.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">serviceCount[bytes32]</text>
+<text x="1104.0" y="1064.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">totalRecords</text>
+<text x="1104.0" y="1085.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">_roles · _paused</text>
+<rect x="1430" y="950" width="320" height="250" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<text x="1444.0" y="978.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">События и ошибки</text>
+<text x="1444.0" y="1001.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">ServiceRegistered/Revoked</text>
+<text x="1444.0" y="1022.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">RoleGranted/Revoked</text>
+<text x="1444.0" y="1043.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">Paused/Unpaused</text>
+<text x="1444.0" y="1064.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">InvalidServiceCode</text>
+<text x="1444.0" y="1085.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">EmptyMachineId</text>
+<text x="1444.0" y="1106.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">TimestampInFuture</text>
+<text x="1444.0" y="1127.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">NothingToRevoke</text>
+<rect x="1090" y="1230" width="660" height="290" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="1090" y="1230" width="660" height="30" rx="12" fill="#137a3f" fill-opacity="1" stroke="#137a3f" stroke-width="1.5"/>
+<rect x="1090" y="1246" width="660" height="14" rx="0" fill="#137a3f" fill-opacity="1" stroke="#137a3f" stroke-width="1.5"/>
+<text x="1104.0" y="1251.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">forge test</text>
+<text x="1104.0" y="1286.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Тесты Foundry (contracts/test)</text>
+<text x="1104.0" y="1309.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">MaintenanceRegistry.t.sol   13 тестов ПР №3</text>
+<text x="1104.0" y="1330.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">Security.fuzz.t.sol         F1 F2 F3</text>
+<text x="1104.0" y="1351.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  1000 прогонов, профиль ci — 5000</text>
+<text x="1104.0" y="1372.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">Security.invariant.t.sol    I1 I2 I3</text>
+<text x="1104.0" y="1393.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  SecurityHandler: admin / tech / stranger</text>
+<text x="1104.0" y="1414.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  256×64 вызова, профиль ci — 512×128</text>
+<text x="1104.0" y="1435.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">mocks/…Vulnerable.sol  — дефект ПР №3</text>
+<text x="1104.0" y="1456.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  негативный контроль для IT12</text>
+<rect x="1820" y="140" width="950" height="1400" rx="16" fill="#e8f6f8" fill-opacity="1" stroke="#c0362c" stroke-width="2.2" stroke-dasharray="10 6"/>
+<rect x="1838" y="126" width="36.295199999999994" height="28" rx="14" fill="#c0362c" fill-opacity="1" stroke="#c0362c" stroke-width="1.5"/>
+<text x="1856.1" y="145.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">C3</text>
+<rect x="1884.2952" y="126" width="251.5520000000001" height="28" rx="14" fill="#fff" fill-opacity="1" stroke="#c0362c" stroke-width="1.5"/>
+<text x="1894.3" y="145.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="600" fill="#c0362c" text-anchor="start">Мониторинг и эксплуатация</text>
+<text x="1840.0" y="176.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="start" font-style="italic">web/monitor · web/scripts · web/load — сервер оператора (TB5) и стенд</text>
+<rect x="1850" y="200" width="440" height="330" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="1850" y="200" width="440" height="30" rx="12" fill="#0f7a8a" fill-opacity="1" stroke="#0f7a8a" stroke-width="1.5"/>
+<rect x="1850" y="216" width="440" height="14" rx="0" fill="#0f7a8a" fill-opacity="1" stroke="#0f7a8a" stroke-width="1.5"/>
+<text x="1864.0" y="221.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">monitor/monitor.mjs</text>
+<text x="1864.0" y="256.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Опрос цепи — processBlock(n)</text>
+<text x="1864.0" y="279.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">getBlock(n, prefetchTxs)</text>
+<text x="1864.0" y="300.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  tx.to == контракт</text>
+<text x="1864.0" y="321.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">getTransactionReceipt(hash)</text>
+<text x="1864.0" y="342.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">status 0 → decodeFailedReceipt</text>
+<text x="1864.0" y="363.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  eth_call на блоке n−1 → причина</text>
+<text x="1864.0" y="384.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">logs → события контракта</text>
+<text x="1864.0" y="405.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">rpc(): таймаут 3 с</text>
+<text x="1864.0" y="426.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  rpc.error / rpc.recovered</text>
+<rect x="2310" y="200" width="440" height="250" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="2310" y="200" width="440" height="30" rx="12" fill="#0f7a8a" fill-opacity="1" stroke="#0f7a8a" stroke-width="1.5"/>
+<rect x="2310" y="216" width="440" height="14" rx="0" fill="#0f7a8a" fill-opacity="1" stroke="#0f7a8a" stroke-width="1.5"/>
+<text x="2324.0" y="221.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">monitor/monitor.mjs</text>
+<text x="2324.0" y="256.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">HTTP-коллектор :8787</text>
+<text x="2324.0" y="279.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">POST /telemetry  ← журнал dApp</text>
+<text x="2324.0" y="300.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">фильтр: только категории app, rpc</text>
+<text x="2324.0" y="322.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">CORS: только localhost:5173</text>
+<text x="2324.0" y="343.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">≤ 64 КБ на запрос, ≤ 50 записей</text>
+<text x="2324.0" y="365.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">GET /health · /alerts · /invariants</text>
+<rect x="1850" y="570" width="440" height="420" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="1850" y="570" width="440" height="30" rx="12" fill="#0f7a8a" fill-opacity="1" stroke="#0f7a8a" stroke-width="1.5"/>
+<rect x="1850" y="586" width="440" height="14" rx="0" fill="#0f7a8a" fill-opacity="1" stroke="#0f7a8a" stroke-width="1.5"/>
+<text x="1864.0" y="591.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">monitor/rules.mjs</text>
+<text x="1864.0" y="626.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Detector — правила</text>
+<text x="1864.0" y="649.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">signalsOf(record) → сигналы</text>
+<text x="1864.0" y="670.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#c0362c" text-anchor="start">R1 «нарушение доступа»</text>
+<text x="1864.0" y="690.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">receipt status 0 или tx.error</text>
+<text x="1864.0" y="711.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">  name = AccessControlUnauthorizedAccount</text>
+<text x="1864.0" y="732.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">≥ 3 за 300 с от адреса · HIGH</text>
+<text x="1864.0" y="754.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#9a6400" text-anchor="start">R2 «сбой RPC»</text>
+<text x="1864.0" y="773.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">rpc.error / tx.error kind RPC</text>
+<text x="1864.0" y="795.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">≥ 3 за 60 с на endpoint · MEDIUM</text>
+<text x="1864.0" y="816.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1d2433" text-anchor="start">Защита от повторов</text>
+<text x="1864.0" y="836.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">одна tx считается один раз (txHash)</text>
+<text x="1864.0" y="857.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">cooldown 600 / 300 с → alert.suppressed</text>
+<rect x="2310" y="490" width="440" height="500" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="2310" y="490" width="440" height="30" rx="12" fill="#0f7a8a" fill-opacity="1" stroke="#0f7a8a" stroke-width="1.5"/>
+<rect x="2310" y="506" width="440" height="14" rx="0" fill="#0f7a8a" fill-opacity="1" stroke="#0f7a8a" stroke-width="1.5"/>
+<text x="2324.0" y="511.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">журналы и оповещения</text>
+<text x="2324.0" y="546.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Выходы монитора</text>
+<text x="2324.0" y="569.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">logs/telemetry.jsonl</text>
+<text x="2324.0" y="590.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">все записи: receipt, event, app, rpc,</text>
+<text x="2324.0" y="612.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">alert.suppressed, invariant</text>
+<text x="2324.0" y="633.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">logs/alerts.jsonl</text>
+<text x="2324.0" y="654.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">alert.fired, alert.resolved</text>
+<text x="2324.0" y="676.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">консоль (цветом)</text>
+<text x="2324.0" y="697.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">ALERT_WEBHOOK_URL → вебхук</text>
+<text x="2324.0" y="718.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">(необязательно, URL — только в .env)</text>
+<text x="2324.0" y="740.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1d2433" text-anchor="start">Реакция дежурного</text>
+<text x="2324.0" y="759.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">R1: проверить адрес и роли,</text>
+<text x="2324.0" y="781.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">при продолжении — pause(), отзыв ролей</text>
+<text x="2324.0" y="802.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">R2: резервный RPC, проверка узла</text>
+<rect x="1850" y="1030" width="440" height="200" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="1850" y="1030" width="440" height="30" rx="12" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<rect x="1850" y="1046" width="440" height="14" rx="0" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<text x="1864.0" y="1051.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">scripts/scenario.mjs</text>
+<text x="1864.0" y="1086.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Сценарии демонстрации</text>
+<text x="1864.0" y="1109.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">scripts/scenario.mjs normal</text>
+<text x="1864.0" y="1130.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">штатная работа → тревог нет</text>
+<text x="1864.0" y="1152.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">scripts/scenario.mjs attack</text>
+<text x="1864.0" y="1173.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">→ R1 на 3-м сигнале, 4-й подавлен</text>
+<rect x="2310" y="1030" width="440" height="200" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="2310" y="1030" width="440" height="30" rx="12" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<rect x="2310" y="1046" width="440" height="14" rx="0" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<text x="2324.0" y="1051.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">scripts/deploy.mjs</text>
+<text x="2324.0" y="1086.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Развёртывание стенда</text>
+<text x="2324.0" y="1109.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">anvil.mjs · deploy.mjs</text>
+<text x="2324.0" y="1130.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">#0 admin · #1 инженер · #2 посторонний</text>
+<text x="2324.0" y="1152.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">#3–#7 клиенты нагрузки</text>
+<text x="2324.0" y="1173.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">→ public/deployment.json</text>
+<rect x="1850" y="1260" width="900" height="130" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="1850" y="1260" width="900" height="30" rx="12" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<rect x="1850" y="1276" width="900" height="14" rx="0" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<text x="1864.0" y="1281.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">load/</text>
+<text x="1864.0" y="1316.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Нагрузочный эксперимент</text>
+<text x="1864.0" y="1339.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">loadtest.mjs: S (30 подряд) · P (5 × 6) · Q (конвейер) × blocktime1 / automine</text>
+<text x="1864.0" y="1360.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">nonce — локально; задержка = отправка → квитанция; plot.py → 4 графика</text>
+<rect x="1850" y="1410" width="900" height="115" rx="12" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="1.6"/>
+<rect x="1850" y="1410" width="900" height="30" rx="12" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<rect x="1850" y="1426" width="900" height="14" rx="0" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<text x="1864.0" y="1431.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="start">npm test</text>
+<text x="1864.0" y="1466.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Автотесты vitest</text>
+<text x="1864.0" y="1489.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13" font-weight="400" fill="#1d2433" text-anchor="start">integration.test.js IT1–IT12 (Anvil) · rules.test.js — 8 тестов правил</text>
+<polyline points="2070.0,530.0 2070.0,570.0" fill="none" stroke="#0f7a8a" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a0f7a8a)"/>
+<polyline points="2310.0,400.0 2300.0,400.0 2300.0,660.0 2290.0,660.0" fill="none" stroke="#0f7a8a" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a0f7a8a)"/>
+<polyline points="2290.0,860.0 2310.0,860.0" fill="none" stroke="#0f7a8a" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a0f7a8a)"/>
+<polyline points="500.0,760.0 560.0,760.0 560.0,742.0 1030.0,742.0 1030.0,600.0 1090.0,600.0" fill="none" stroke="#1d2433" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a1d2433)"/>
+<polyline points="1090.0,830.0 1040.0,830.0 1040.0,980.0 1000.0,980.0" fill="none" stroke="#137a3f" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a137a3f)"/>
+<polyline points="990.0,1115.0 1044.0,1115.0 1044.0,1562.0 2815.0,1562.0 2815.0,330.0 2750.0,330.0" fill="none" stroke="#0f7a8a" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="9 6" marker-end="url(#a0f7a8a)"/>
+<polyline points="1850.0,300.0 1750.0,300.0" fill="none" stroke="#0f7a8a" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="9 6" marker-end="url(#a0f7a8a)"/>
+<rect x="30" y="1630" width="2800" height="620" rx="12" fill="#fff" fill-opacity="1" stroke="#d0d5dd" stroke-width="1.2"/>
+<text x="54.0" y="1670.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="20" font-weight="700" fill="#1d2433" text-anchor="start">Где выполняется каждая проверка и что она гарантирует</text>
+<text x="54.0" y="1714.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#5b6474" text-anchor="start">Проверка</text>
+<text x="640.0" y="1714.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#5b6474" text-anchor="start">Компонент</text>
+<text x="1240.0" y="1714.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#5b6474" text-anchor="start">Тип</text>
+<text x="1640.0" y="1714.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#5b6474" text-anchor="start">Что даёт / почему не заменяет контракт</text>
+<rect x="40" y="1724" width="2780" height="52" rx="6" fill="#f8f9fb" fill-opacity="1" stroke="none" stroke-width="0"/>
+<text x="54.0" y="1754.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="600" fill="#1d2433" text-anchor="start">Роли в интерфейсе (hasRole)</text>
+<text x="640.0" y="1754.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">App.jsx</text>
+<text x="1640.0" y="1754.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">UX: объясняет, что вызов откатится; обходится правкой кода или cast</text>
+<text x="54.0" y="1806.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="600" fill="#1d2433" text-anchor="start">chainId = 31337</text>
+<text x="640.0" y="1806.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">RegistryClient.assertNetwork</text>
+<text x="1640.0" y="1806.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">не даёт подписать в чужой сети; EIP-155 дополнительно защищает подпись</text>
+<rect x="40" y="1828" width="2780" height="52" rx="6" fill="#f8f9fb" fill-opacity="1" stroke="none" stroke-width="0"/>
+<text x="54.0" y="1858.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="600" fill="#1d2433" text-anchor="start">Симуляция eth_call до подписи</text>
+<text x="640.0" y="1858.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">RegistryClient (staticCall)</text>
+<text x="1640.0" y="1858.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">откат виден до подписи, газ не тратится; обходится отправкой в обход dApp</text>
+<text x="54.0" y="1910.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="600" fill="#1d2433" text-anchor="start">Согласие пользователя</text>
+<text x="640.0" y="1910.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">MetaMask (окно подписи)</text>
+<text x="1640.0" y="1910.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">ключ не покидает кошелёк; защищает от тихой подписи, не от ошибки пользователя</text>
+<rect x="40" y="1932" width="2780" height="52" rx="6" fill="#f8f9fb" fill-opacity="1" stroke="none" stroke-width="0"/>
+<text x="54.0" y="1962.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="600" fill="#1d2433" text-anchor="start">onlyRole(TECHNICIAN / ADMIN / DEFAULT_ADMIN)</text>
+<text x="640.0" y="1962.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">MaintenanceRegistry (EVM)</text>
+<text x="1640.0" y="1962.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">единственная проверка, которую нельзя обойти: выполняется консенсусом</text>
+<text x="54.0" y="2014.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="600" fill="#1d2433" text-anchor="start">whenNotPaused · проверки данных</text>
+<text x="640.0" y="2014.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">MaintenanceRegistry (EVM)</text>
+<text x="1640.0" y="2014.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">аварийная остановка записи; InvalidServiceCode, EmptyMachineId, TimestampInFuture</text>
+<rect x="40" y="2036" width="2780" height="52" rx="6" fill="#f8f9fb" fill-opacity="1" stroke="none" stroke-width="0"/>
+<text x="54.0" y="2066.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="600" fill="#1d2433" text-anchor="start">R1 / R2, дедупликация тревог</text>
+<text x="640.0" y="2066.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">monitor Detector</text>
+<text x="1640.0" y="2066.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">не предотвращает, а сообщает: попытки без роли, сбой RPC; без повторных уведомлений</text>
+<text x="54.0" y="2118.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="600" fill="#1d2433" text-anchor="start">Инварианты I1–I3, fuzz F1–F3</text>
+<text x="640.0" y="2118.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">Foundry + invariants.js</text>
+<text x="1640.0" y="2118.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">доказывает свойства на тысячах случайных сценариев и по журналу развёрнутого контракта</text>
+<rect x="40" y="2140" width="2780" height="52" rx="6" fill="#f8f9fb" fill-opacity="1" stroke="none" stroke-width="0"/>
+<text x="54.0" y="2170.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="600" fill="#1d2433" text-anchor="start">Slither, npm audit, версия OZ ≥ 5.4.0</text>
+<text x="640.0" y="2170.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">CI GitHub Actions</text>
+<text x="1640.0" y="2170.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">останавливает сборку при Medium+ в коде и High+ в зависимостях</text>
+<rect x="721.36" y="432" width="83.27999999999999" height="22" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="763.0" y="446.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12" font-weight="500" fill="#5b6474" text-anchor="middle">использует</text>
+<circle cx="700" cy="742" r="15" fill="#1d2433" stroke="#fff" stroke-width="2.5"/>
+<text x="700.0" y="747.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<rect x="762.2199999999999" y="732.5" width="235.56000000000012" height="22.5" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="880.0" y="747.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#1d2433" text-anchor="middle">транзакция: кошелёк → RPC → EVM</text>
+<circle cx="1040" cy="905" r="15" fill="#137a3f" stroke="#fff" stroke-width="2.5"/>
+<text x="1040.0" y="910.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<rect x="998.4275" y="935.5" width="83.14500000000001" height="39.0" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="1040.0" y="950.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#137a3f" text-anchor="middle">квитанция,</text>
+<text x="1040.0" y="966.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#137a3f" text-anchor="middle">события</text>
+<circle cx="1500" cy="1562" r="15" fill="#0f7a8a" stroke="#fff" stroke-width="2.5"/>
+<text x="1500.0" y="1567.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<rect x="1648.4404" y="1575" width="503.11920000000015" height="23" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="1900.0" y="1590.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="500" fill="#0f7a8a" text-anchor="middle">прикладной журнал dApp: POST /telemetry (correlationId) → коллектор</text>
+<circle cx="1800" cy="300" r="15" fill="#0f7a8a" stroke="#fff" stroke-width="2.5"/>
+<text x="1800.0" y="305.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<rect x="1775.4375" y="331.5" width="49.125" height="55.5" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="1800.0" y="346.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#0f7a8a" text-anchor="middle">опрос</text>
+<text x="1800.0" y="362.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#0f7a8a" text-anchor="middle">через</text>
+<text x="1800.0" y="379.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#0f7a8a" text-anchor="middle">RPC</text>
+<rect x="1240" y="1740" width="85.498" height="23" rx="11.5" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<text x="1282.7" y="1758.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">подсказка</text>
+<rect x="1240" y="1792" width="171.70360000000005" height="23" rx="11.5" fill="#9a6400" fill-opacity="1" stroke="#9a6400" stroke-width="1.5"/>
+<text x="1325.9" y="1810.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">блокировка на клиенте</text>
+<rect x="1240" y="1844" width="127.3372" height="23" rx="11.5" fill="#9a6400" fill-opacity="1" stroke="#9a6400" stroke-width="1.5"/>
+<text x="1303.7" y="1862.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">предупреждение</text>
+<rect x="1240" y="1896" width="77.776" height="23" rx="11.5" fill="#6b3fd6" fill-opacity="1" stroke="#6b3fd6" stroke-width="1.5"/>
+<text x="1278.9" y="1914.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">согласие</text>
+<rect x="1240" y="1948" width="127.19680000000001" height="23" rx="11.5" fill="#c0362c" fill-opacity="1" stroke="#c0362c" stroke-width="1.5"/>
+<text x="1303.6" y="1966.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">АВТОРИТЕТНАЯ</text>
+<rect x="1240" y="2000" width="127.19680000000001" height="23" rx="11.5" fill="#c0362c" fill-opacity="1" stroke="#c0362c" stroke-width="1.5"/>
+<text x="1303.6" y="2018.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">АВТОРИТЕТНАЯ</text>
+<rect x="1240" y="2052" width="104.17119999999998" height="23" rx="11.5" fill="#0f7a8a" fill-opacity="1" stroke="#0f7a8a" stroke-width="1.5"/>
+<text x="1292.1" y="2070.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">обнаружение</text>
+<rect x="1240" y="2104" width="100.942" height="23" rx="11.5" fill="#137a3f" fill-opacity="1" stroke="#137a3f" stroke-width="1.5"/>
+<text x="1290.5" y="2122.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">верификация</text>
+<rect x="1240" y="2156" width="144.04480000000004" height="23" rx="11.5" fill="#667085" fill-opacity="1" stroke="#667085" stroke-width="1.5"/>
+<text x="1312.0" y="2174.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">контроль поставки</text>
+</svg>

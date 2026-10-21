@@ -1,0 +1,36 @@
+// ABI контракта MaintenanceRegistry (ПР №3, исправленная версия) в человекочитаемом виде ethers v6.
+// Получен из contracts/out/MaintenanceRegistry.sol/MaintenanceRegistry.json (Interface.format()).
+// Ошибки OpenZeppelin (AccessControl*, EnforcedPause, ExpectedPause) включены, чтобы клиент
+// мог раскодировать причину отката.
+export const REGISTRY_ABI = [
+  'function ADMIN_ROLE() view returns (bytes32)',
+  'function DEFAULT_ADMIN_ROLE() view returns (bytes32)',
+  'function TECHNICIAN_ROLE() view returns (bytes32)',
+  'function getLastService(bytes32 machineId) view returns (uint32 serviceCode, uint64 timestamp, address technician, bytes32 documentHash, bool revoked)',
+  'function getRoleAdmin(bytes32 role) view returns (bytes32)',
+  'function grantRole(bytes32 role, address account)',
+  'function hasRole(bytes32 role, address account) view returns (bool)',
+  'function pause()',
+  'function paused() view returns (bool)',
+  'function registerService(bytes32 machineId, uint32 serviceCode, uint64 timestamp, bytes32 documentHash)',
+  'function revokeLastService(bytes32 machineId)',
+  'function revokeRole(bytes32 role, address account)',
+  'function serviceCount(bytes32) view returns (uint256)',
+  'function totalRecords() view returns (uint256)',
+  'function unpause()',
+  'function verifyDocument(bytes32 machineId, bytes32 documentHash) view returns (bool)',
+  'event Paused(address account)',
+  'event RoleGranted(bytes32 indexed role, address indexed account, address indexed sender)',
+  'event RoleRevoked(bytes32 indexed role, address indexed account, address indexed sender)',
+  'event ServiceRegistered(bytes32 indexed machineId, uint32 serviceCode, uint64 timestamp, bytes32 documentHash, address indexed technician)',
+  'event ServiceRevoked(bytes32 indexed machineId, address indexed admin)',
+  'event Unpaused(address account)',
+  'error AccessControlBadConfirmation()',
+  'error AccessControlUnauthorizedAccount(address account, bytes32 neededRole)',
+  'error EmptyMachineId()',
+  'error EnforcedPause()',
+  'error ExpectedPause()',
+  'error InvalidServiceCode()',
+  'error NothingToRevoke(bytes32 machineId)',
+  'error TimestampInFuture(uint64 provided, uint64 blockTime)',
+];

@@ -1,0 +1,11 @@
+'forge clean' running (wd: /home/ubuntu/mr5/contracts)
+'forge config --json' running
+'forge build --build-info --deny never --skip ./test/** ./script/** --force' running (wd: /home/ubuntu/mr5/contracts)
+INFO:Detectors:
+Detector: timestamp
+MaintenanceRegistry.registerService(bytes32,uint32,uint64,bytes32) (src/MaintenanceRegistry.sol#55-81) uses timestamp for comparisons
+	Dangerous comparisons:
+	- timestamp > uint64(block.timestamp) (src/MaintenanceRegistry.sol#64)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+INFO:Slither:. analyzed (7 contracts with 102 detectors), 1 result(s) found
+exit=0

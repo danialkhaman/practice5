@@ -1,0 +1,8 @@
+
+> mr5-web@1.0.0 scenario:attack
+> node --env-file-if-exists=../.env scripts/scenario.mjs attack
+
+• посторонний: регистрация ТО (отказ в dApp, eth_call) [cid 99c5ee16] … ОТКАЗ: AccessControlUnauthorizedAccount (preflight)
+• посторонний: пауза системы (отказ в dApp, eth_call) [cid 577042b4] … ОТКАЗ: AccessControlUnauthorizedAccount (preflight)
+• посторонний: отзыв записи в обход проверки (gasLimit вручную) [cid e941f844] … ОТКАЗ: AccessControlUnauthorizedAccount (onchain), блок 16, status 0
+• посторонний: пауза в обход проверки (gasLimit вручную) [cid 9b0f5c26] … ОТКАЗ: AccessControlUnauthorizedAccount (onchain), блок 17, status 0

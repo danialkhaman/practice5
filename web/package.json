@@ -1,0 +1,33 @@
+{
+  "name": "mr5-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ПР №5, вариант 8 «Промышленность»: Web3-клиент MaintenanceRegistry, мониторинг, тесты, нагрузка",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "deploy:local": "node --env-file-if-exists=../.env scripts/deploy.mjs",
+    "monitor": "node --env-file-if-exists=../.env monitor/monitor.mjs",
+    "scenario:normal": "node --env-file-if-exists=../.env scripts/scenario.mjs normal",
+    "scenario:attack": "node --env-file-if-exists=../.env scripts/scenario.mjs attack",
+    "test": "vitest run",
+    "load": "node --env-file-if-exists=../.env load/loadtest.mjs",
+    "load:plot": "python3 load/plot.py",
+    "audit:deps": "npm audit --audit-level=high"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.5"
+  }
+}

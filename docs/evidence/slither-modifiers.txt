@@ -1,0 +1,45 @@
+Multiple frameworks detected: Foundry, solc, Solc-json. Using Foundry (highest priority). Use --compile-force-framework to override.
+'forge clean' running (wd: /home/ubuntu/mr5/contracts)
+'forge config --json' running
+'forge build --build-info --deny never src/MaintenanceRegistry.sol' running (wd: /home/ubuntu/mr5/contracts)
+INFO:Printers:
+Contract MaintenanceRegistry
++-------------------------------------+-------------------------------+
+| Function                            | Modifiers                     |
++-------------------------------------+-------------------------------+
+| paused                              | []                            |
+| _requireNotPaused                   | []                            |
+| _requirePaused                      | []                            |
+| _pause                              | ['whenNotPaused']             |
+| _unpause                            | ['whenPaused']                |
+| _msgSender                          | []                            |
+| _msgData                            | []                            |
+| _contextSuffixLength                | []                            |
+| supportsInterface                   | []                            |
+| hasRole                             | []                            |
+| _checkRole                          | []                            |
+| _checkRole                          | []                            |
+| getRoleAdmin                        | []                            |
+| grantRole                           | ['onlyRole']                  |
+| revokeRole                          | ['onlyRole']                  |
+| renounceRole                        | []                            |
+| _setRoleAdmin                       | []                            |
+| _grantRole                          | []                            |
+| _revokeRole                         | []                            |
+| supportsInterface                   | []                            |
+| supportsInterface                   | []                            |
+| hasRole                             | []                            |
+| getRoleAdmin                        | []                            |
+| grantRole                           | []                            |
+| revokeRole                          | []                            |
+| renounceRole                        | []                            |
+| constructor                         | []                            |
+| registerService                     | ['onlyRole', 'whenNotPaused'] |
+| revokeLastService                   | ['onlyRole']                  |
+| pause                               | ['onlyRole', 'whenNotPaused'] |
+| unpause                             | ['onlyRole', 'whenPaused']    |
+| getLastService                      | []                            |
+| verifyDocument                      | []                            |
+| slitherConstructorConstantVariables | []                            |
++-------------------------------------+-------------------------------+
+INFO:Slither:src/MaintenanceRegistry.sol analyzed (7 contracts)

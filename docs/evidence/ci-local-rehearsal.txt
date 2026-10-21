@@ -1,0 +1,231 @@
+
+========== contracts: версии инструментов ==========
+forge Version: 1.8.5
+Commit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f
+Build Timestamp: 2026-10-05T17:18:54.332175693Z (1791220734)
+Build Profile: dist
+anvil Version: 1.8.5
+Commit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f
+Build Timestamp: 2026-10-05T17:18:54.332175693Z (1791220734)
+Build Profile: dist
+
+========== contracts: проверка зависимости OpenZeppelin (>= 5.4.0) ==========
+OK: OpenZeppelin Contracts 5.7.0 >= 5.4.0
+
+========== contracts: сборка ==========
+No files changed, compilation skipped
+
+╭-------------------------------+------------------+-------------------+--------------------+---------------------╮
+| Contract                      | Runtime Size (B) | Initcode Size (B) | Runtime Margin (B) | Initcode Margin (B) |
++=================================================================================================================+
+| MaintenanceRegistry           | 2,898            | 3,274             | 21,678             | 45,878              |
+|-------------------------------+------------------+-------------------+--------------------+---------------------|
+| MaintenanceRegistryVulnerable | 2,789            | 3,165             | 21,787             | 45,987              |
+╰-------------------------------+------------------+-------------------+--------------------+---------------------╯
+
+warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
+   ╭▸ src/MaintenanceRegistry.sol:64:13
+   │
+64 │         if (timestamp > uint64(block.timestamp)) {
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/block-timestamp
+
+warning[unsafe-typecast]: typecast can truncate values
+   ╭▸ src/MaintenanceRegistry.sol:64:25
+   │
+64 │         if (timestamp > uint64(block.timestamp)) {
+   │                         ━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ├ note: consider disabling this lint if you're certain the cast is safe
+   │       
+   │       // casting to 'uint64' is safe because [explain why]
+   │       // forge-lint: disable-next-line(unsafe-typecast)
+   │       
+   │       
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+warning[unsafe-typecast]: typecast can truncate values
+   ╭▸ src/MaintenanceRegistry.sol:65:49
+   │
+65 │             revert TimestampInFuture(timestamp, uint64(block.timestamp));
+   │                                                 ━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ├ note: consider disabling this lint if you're certain the cast is safe
+   │       
+   │       // casting to 'uint64' is safe because [explain why]
+   │       // forge-lint: disable-next-line(unsafe-typecast)
+   │       
+   │       
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+
+========== contracts: тесты Foundry (unit, fuzz, 3 инварианта), профиль ci ==========
+No files changed, compilation skipped
+
+Ran 13 tests for test/MaintenanceRegistry.t.sol:MaintenanceRegistryTest
+[PASS] testFuzz_OnlyTechnicianCanRegister(address) (runs: 5000, μ: 53711, ~: 53711)
+[PASS] testFuzz_RegisterService_StoresData(bytes32,uint32,uint64,bytes32) (runs: 5000, μ: 143367, ~: 143627)
+[PASS] test_Pause_BlocksRegister() (gas: 238928)
+[PASS] test_Pause_OnlyAdmin() (gas: 36942)
+[PASS] test_RegisterService_EmitsEvent() (gas: 134146)
+[PASS] test_RegisterService_RevertIfNotTechnician() (gas: 38240)
+[PASS] test_RegisterService_RevertOnEmptyMachineId() (gas: 37733)
+[PASS] test_RegisterService_RevertOnFutureTimestamp() (gas: 38402)
+[PASS] test_RegisterService_RevertOnZeroCode() (gas: 37828)
+[PASS] test_RegisterService_Success() (gas: 156523)
+[PASS] test_RevokeLastService_OnlyAdmin() (gas: 222121)
+[PASS] test_RevokeLastService_RevertOnDoubleRevoke() (gas: 214328)
+[PASS] test_VerifyDocument() (gas: 144242)
+Suite result: ok. 13 passed; 0 failed; 0 skipped; finished in 256.52ms (506.69ms CPU time)
+
+Ran 3 tests for test/Security.fuzz.t.sol:SecurityFuzzTest
+[PASS] testFuzz_F1_NoRoleCannotWrite(address,bytes32,uint32,uint64) (runs: 5000, μ: 104854, ~: 104789)
+[PASS] testFuzz_F2_RegisterRoundTrip(bytes32,uint32,uint64,bytes32,bytes32) (runs: 5000, μ: 175285, ~: 175355)
+[PASS] testFuzz_F3_FutureTimestampAlwaysReverts(uint64) (runs: 5000, μ: 38425, ~: 38372)
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 256.51ms (744.43ms CPU time)
+
+Ran 1 test for test/Security.invariant.t.sol:SecurityInvariantTest
+[PASS]
+SecurityInvariantTest invariants:
+[PASS] invariant_I1_OnlyAuthorizedRolesChangeState
+[PASS] invariant_I2_CountersConsistent
+[PASS] invariant_I3_PauseBlocksWrites
+ SecurityInvariantTest invariants (runs: 512, calls: 65536, reverts: 0)
+
+╭-----------------+----------+-------+---------+----------╮
+| Contract        | Selector | Calls | Reverts | Discards |
++=========================================================+
+| SecurityHandler | pause    | 16323 | 0       | 0        |
+|-----------------+----------+-------+---------+----------|
+| SecurityHandler | register | 16350 | 0       | 0        |
+|-----------------+----------+-------+---------+----------|
+| SecurityHandler | revoke   | 16470 | 0       | 0        |
+|-----------------+----------+-------+---------+----------|
+| SecurityHandler | unpause  | 16393 | 0       | 0        |
+╰-----------------+----------+-------+---------+----------╯
+
+Logs:
+  calls register/revoke/pause/unpause: 33 37 33
+  successful registrations: 6 unpause calls: 26
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 12.99s (12.98s CPU time)
+
+Ran 3 test suites in 13.00s (13.51s CPU time): 17 tests passed, 0 failed, 0 skipped (17 total tests)
+
+========== contracts: Slither (порог Medium) ==========
+0.11.6
+'forge clean' running (wd: /home/ubuntu/mr5/contracts)
+'forge config --json' running
+'forge build --build-info --deny never --skip ./test/** ./script/** --force' running (wd: /home/ubuntu/mr5/contracts)
+INFO:Detectors:
+Detector: timestamp
+MaintenanceRegistry.registerService(bytes32,uint32,uint64,bytes32) (src/MaintenanceRegistry.sol#55-81) uses timestamp for comparisons
+	Dangerous comparisons:
+	- timestamp > uint64(block.timestamp) (src/MaintenanceRegistry.sol#64)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+INFO:Slither:. analyzed (7 contracts with 102 detectors), 1 result(s) found
+
+========== web: сборка контракта (артефакт для деплоя в тестах; Slither пересобирает out/ без test/) ==========
+Compiling 30 files with Solc 0.8.30
+Solc 0.8.30 finished in 1.67s
+Compiler run successful!
+warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
+   ╭▸ src/MaintenanceRegistry.sol:64:13
+   │
+64 │         if (timestamp > uint64(block.timestamp)) {
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/block-timestamp
+
+warning[unsafe-typecast]: typecast can truncate values
+   ╭▸ src/MaintenanceRegistry.sol:64:25
+   │
+64 │         if (timestamp > uint64(block.timestamp)) {
+   │                         ━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ├ note: consider disabling this lint if you're certain the cast is safe
+   │       
+   │       // casting to 'uint64' is safe because [explain why]
+   │       // forge-lint: disable-next-line(unsafe-typecast)
+   │       
+   │       
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+warning[unsafe-typecast]: typecast can truncate values
+   ╭▸ src/MaintenanceRegistry.sol:65:49
+   │
+65 │             revert TimestampInFuture(timestamp, uint64(block.timestamp));
+   │                                                 ━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ├ note: consider disabling this lint if you're certain the cast is safe
+   │       
+   │       // casting to 'uint64' is safe because [explain why]
+   │       // forge-lint: disable-next-line(unsafe-typecast)
+   │       
+   │       
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+
+========== web: npm ci ==========
+
+added 52 packages, and audited 53 packages in 2s
+
+found 0 vulnerabilities
+
+========== web: npm audit (порог high) ==========
+found 0 vulnerabilities
+
+========== web: сборка dApp ==========
+
+> mr5-web@1.0.0 build
+> vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 170 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.44 kB │ gzip:   0.32 kB
+dist/assets/index-Cs6Li-tk.css    4.92 kB │ gzip:   1.59 kB
+dist/assets/index-DCM474pa.js   504.64 kB │ gzip: 171.12 kB
+
+✓ built in 302ms
+
+========== web: интеграционные тесты (Anvil) и тесты правил мониторинга ==========
+
+> mr5-web@1.0.0 test
+> vitest run
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.5 [39m[90m/home/ubuntu/mr5/web[39m
+
+ [32m✓[39m test/integration.test.js[2m > [22mПоложительные сценарии[2m > [22mIT1: инженер регистрирует этап ТО — этапы, квитанция, состояние, событие[32m 149[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mПоложительные сценарии[2m > [22mIT2: администратор отзывает запись — событие ServiceRevoked, документ больше не подтверждается[32m 102[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mНегативные сценарии и авторизация[2m > [22mIT3: посторонний не может зарегистрировать ТО — откат до подписи, nonce и состояние не изменились[32m 79[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mНегативные сценарии и авторизация[2m > [22mIT4: инженер не может выполнить привилегированную операцию pause()[32m 29[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mНегативные сценарии и авторизация[2m > [22mIT5: откат в блокчейне — status 0, событий в журнале нет, причина раскодирована по квитанции[32m 100[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mНегативные сценарии и авторизация[2m > [22mIT6: отказ в подписи — ошибка USER_REJECTED, транзакция не отправлена[32m 38[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mНегативные сценарии и авторизация[2m > [22mIT7: неверная сеть — запись блокируется до подписи[32m 227[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mНегативные сценарии и авторизация[2m > [22mIT8: пауза блокирует запись (EnforcedPause), после снятия запись снова работает[32m 247[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mНегативные сценарии и авторизация[2m > [22mIT9: валидация входных данных — нулевой код и время из будущего[32m 42[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mСобытия и инварианты[2m > [22mIT10: лента событий без дублей при перекрытии истории и live-опроса[32m 60[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mСобытия и инварианты[2m > [22mIT11: три инварианта выполняются на развёрнутом контракте после всех сценариев[32m 124[2mms[22m[39m
+ [32m✓[39m test/integration.test.js[2m > [22mСобытия и инварианты[2m > [22mIT12: негативный контроль — на уязвимой версии ПР №3 проверка обнаруживает нарушение I1[33m 391[2mms[22m[39m
+ [32m✓[39m monitor/rules.test.js[2m > [22mR1 — попытки нарушения доступа[2m > [22mсрабатывает на 3-й попытке за 300 с и не срабатывает на 2-й[32m 4[2mms[22m[39m
+ [32m✓[39m monitor/rules.test.js[2m > [22mR1 — попытки нарушения доступа[2m > [22mне считает дважды один откат, пришедший из dApp и из квитанции[32m 0[2mms[22m[39m
+ [32m✓[39m monitor/rules.test.js[2m > [22mR1 — попытки нарушения доступа[2m > [22mпопытки за пределами окна 300 с не накапливаются[32m 0[2mms[22m[39m
+ [32m✓[39m monitor/rules.test.js[2m > [22mR1 — попытки нарушения доступа[2m > [22mзащита от повторных уведомлений: 6 попыток подряд -> 1 тревога, 3 подавлены[32m 1[2mms[22m[39m
+ [32m✓[39m monitor/rules.test.js[2m > [22mR1 — попытки нарушения доступа[2m > [22mразные адреса считаются раздельно[32m 0[2mms[22m[39m
+ [32m✓[39m monitor/rules.test.js[2m > [22mR2 — эксплуатационный сбой RPC[2m > [22m3 ошибки RPC за 60 с -> тревога MEDIUM, затем resolved после восстановления[32m 0[2mms[22m[39m
+ [32m✓[39m monitor/rules.test.js[2m > [22mR2 — эксплуатационный сбой RPC[2m > [22m2 ошибки за 60 с — не тревога (кратковременный сбой)[32m 0[2mms[22m[39m
+ [32m✓[39m monitor/rules.test.js[2m > [22mШтатный сценарий[2m > [22mуспешные транзакции, события и один случайный отказ не вызывают тревог[32m 0[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m20 passed[39m[22m[90m (20)[39m
+[2m   Start at [22m 20:38:03
+[2m   Duration [22m 2.84s[2m (tests 90%, import 6%, transform 5%)[22m
+
+
+CI (локально): все шаги пройдены
+exit=0

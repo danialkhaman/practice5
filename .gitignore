@@ -1,0 +1,17 @@
+# Foundry
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+
+# Node / Vite
+web/node_modules/
+web/dist/
+
+# артефакты локального стенда
+web/public/deployment.json
+web/monitor/logs/
+
+# окружение: секреты только локально, в git — лишь .env.example
+.env
+.env.*
+!.env.example

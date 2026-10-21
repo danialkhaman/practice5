@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1500" viewBox="0 0 2500 1500"><defs><marker id="a667085" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#667085"/></marker><marker id="s667085" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#667085"/></marker><marker id="ac0362c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c0362c"/></marker><marker id="sc0362c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c0362c"/></marker><marker id="a6b3fd6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b3fd6"/></marker><marker id="s6b3fd6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b3fd6"/></marker><marker id="a344054" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#344054"/></marker><marker id="s344054" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#344054"/></marker><marker id="a1d2433" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1d2433"/></marker><marker id="s1d2433" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1d2433"/></marker><marker id="a9a6400" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9a6400"/></marker><marker id="s9a6400" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9a6400"/></marker><marker id="a0f7a8a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f7a8a"/></marker><marker id="s0f7a8a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f7a8a"/></marker><marker id="a137a3f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#137a3f"/></marker><marker id="s137a3f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#137a3f"/></marker><marker id="a2856d8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2856d8"/></marker><marker id="s2856d8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2856d8"/></marker></defs><rect width="2500" height="1500" fill="#ffffff"/>
+<text x="40.0" y="52.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="30" font-weight="700" fill="#1d2433" text-anchor="start">DFD · уровень 0 — контекстная диаграмма потоков данных</text>
+<text x="40.0" y="86.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="400" fill="#5b6474" text-anchor="start">Система как один процесс 0; внешние сущности и все потоки данных между ними и системой (нотация Гейна — Сарсона)</text>
+<rect x="760" y="330" width="980" height="760" rx="16" fill="#eef3ff" fill-opacity="1" stroke="#c0362c" stroke-width="2.2" stroke-dasharray="10 6"/>
+<rect x="778" y="316" width="47.9376" height="28" rx="14" fill="#c0362c" fill-opacity="1" stroke="#c0362c" stroke-width="1.5"/>
+<text x="802.0" y="335.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">SYS</text>
+<rect x="835.9376" y="316" width="350.3936000000002" height="28" rx="14" fill="#fff" fill-opacity="1" stroke="#c0362c" stroke-width="1.5"/>
+<text x="845.9" y="335.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="600" fill="#c0362c" text-anchor="start">Граница системы MaintenanceRegistry</text>
+<rect x="880" y="450" width="740" height="520" rx="18" fill="#fff" fill-opacity="1" stroke="#2856d8" stroke-width="2.4"/>
+<rect x="880" y="450" width="740" height="34" rx="18" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<rect x="880" y="468" width="740" height="16" rx="0" fill="#2856d8" fill-opacity="1" stroke="#2856d8" stroke-width="1.5"/>
+<text x="1250.0" y="474.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">0</text>
+<text x="1250.0" y="512.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1d2433" text-anchor="middle">Учёт технического</text>
+<text x="1250.0" y="534.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1d2433" text-anchor="middle">обслуживания оборудования</text>
+<text x="1250.0" y="560.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">dApp (React + ethers.js v6) · кошелёк пользователя</text>
+<text x="1250.0" y="579.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">RPC-узел · смарт-контракт MaintenanceRegistry</text>
+<text x="1250.0" y="598.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">мониторинг (телеметрия, правила R1/R2)</text>
+<text x="1250.0" y="617.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle"></text>
+<text x="1250.0" y="636.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">хранилища внутри: состояние контракта,</text>
+<text x="1250.0" y="655.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">журнал EVM и квитанции, прикладной журнал,</text>
+<text x="1250.0" y="674.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">журнал тревог (раскрыты на уровне 1)</text>
+<rect x="67" y="207" width="380" height="120" rx="4" fill="#d0d5dd" fill-opacity="1" stroke="none" stroke-width="0"/>
+<rect x="60" y="200" width="380" height="120" rx="4" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="2.4"/>
+<text x="250.0" y="230.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1d2433" text-anchor="middle">Инженер ТО</text>
+<text x="250.0" y="252.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">TECHNICIAN_ROLE</text>
+<rect x="67" y="587" width="380" height="120" rx="4" fill="#d0d5dd" fill-opacity="1" stroke="none" stroke-width="0"/>
+<rect x="60" y="580" width="380" height="120" rx="4" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="2.4"/>
+<text x="250.0" y="610.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1d2433" text-anchor="middle">Администратор</text>
+<text x="250.0" y="632.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">ADMIN_ROLE, DEFAULT_ADMIN_ROLE</text>
+<rect x="67" y="987" width="380" height="170" rx="4" fill="#d0d5dd" fill-opacity="1" stroke="none" stroke-width="0"/>
+<rect x="60" y="980" width="380" height="170" rx="4" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="2.4"/>
+<text x="250.0" y="1010.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1d2433" text-anchor="middle">Нарушитель</text>
+<text x="250.0" y="1032.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">посторонний адрес</text>
+<text x="250.0" y="1050.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">или украденный ключ</text>
+<rect x="1067" y="137" width="380" height="130" rx="4" fill="#d0d5dd" fill-opacity="1" stroke="none" stroke-width="0"/>
+<rect x="1060" y="130" width="380" height="130" rx="4" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="2.4"/>
+<text x="1250.0" y="160.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1d2433" text-anchor="middle">Аудитор / наблюдатель</text>
+<text x="1250.0" y="182.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">без ролей, только чтение</text>
+<rect x="2067" y="207" width="380" height="120" rx="4" fill="#d0d5dd" fill-opacity="1" stroke="none" stroke-width="0"/>
+<rect x="2060" y="200" width="380" height="120" rx="4" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="2.4"/>
+<text x="2250.0" y="230.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1d2433" text-anchor="middle">Хранилище актов ТО</text>
+<text x="2250.0" y="252.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">off-chain, вне системы</text>
+<rect x="2067" y="987" width="380" height="120" rx="4" fill="#d0d5dd" fill-opacity="1" stroke="none" stroke-width="0"/>
+<rect x="2060" y="980" width="380" height="120" rx="4" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="2.4"/>
+<text x="2250.0" y="1010.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1d2433" text-anchor="middle">Дежурный / SOC</text>
+<text x="2250.0" y="1032.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#5b6474" text-anchor="middle">получатель тревог</text>
+<polyline points="440.0,250.0 880.0,560.0" fill="none" stroke="#137a3f" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a137a3f)"/>
+<polyline points="880.0,620.0 440.0,320.0" fill="none" stroke="#137a3f" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a137a3f)"/>
+<polyline points="440.0,640.0 880.0,700.0" fill="none" stroke="#2856d8" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a2856d8)"/>
+<polyline points="880.0,760.0 440.0,700.0" fill="none" stroke="#2856d8" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a2856d8)"/>
+<polyline points="440.0,1030.0 880.0,880.0" fill="none" stroke="#c0362c" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="9 6" marker-end="url(#ac0362c)"/>
+<polyline points="880.0,940.0 440.0,1100.0" fill="none" stroke="#c0362c" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="9 6" marker-end="url(#ac0362c)"/>
+<polyline points="1200.0,260.0 1200.0,450.0" fill="none" stroke="#667085" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a667085)"/>
+<polyline points="1300.0,450.0 1300.0,260.0" fill="none" stroke="#667085" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a667085)"/>
+<polyline points="2060.0,280.0 1620.0,560.0" fill="none" stroke="#6b3fd6" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a6b3fd6)"/>
+<polyline points="1620.0,880.0 2060.0,1050.0" fill="none" stroke="#0f7a8a" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a0f7a8a)"/>
+<polyline points="2060.0,1110.0 1620.0,940.0" fill="none" stroke="#0f7a8a" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="9 6" marker-end="url(#a0f7a8a)"/>
+<rect x="60" y="1220" width="420" height="164" rx="10" fill="#fff" fill-opacity="1" stroke="#d0d5dd" stroke-width="1.2"/>
+<text x="76.0" y="1248.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#1d2433" text-anchor="start">Обозначения</text>
+<rect x="76" y="1263" width="42" height="22" rx="6" fill="#fff" fill-opacity="1" stroke="#344054" stroke-width="2"/>
+<text x="132.0" y="1280.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">внешняя сущность (с тенью)</text>
+<rect x="76" y="1293" width="42" height="22" rx="6" fill="#fff" fill-opacity="1" stroke="#2856d8" stroke-width="2"/>
+<text x="132.0" y="1310.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">процесс (номер в шапке)</text>
+<rect x="76" y="1325" width="42" height="20" rx="5" fill="#fff" fill-opacity="1" stroke="#c0362c" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="132.0" y="1340.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">граница системы / доверия</text>
+<polyline points="76.0,1365.0 118.0,1365.0" fill="none" stroke="#c0362c" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ac0362c)"/>
+<text x="132.0" y="1370.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1d2433" text-anchor="start">поток нарушителя</text>
+<rect x="560" y="1220" width="1880" height="230" rx="10" fill="#fff" fill-opacity="1" stroke="#d0d5dd" stroke-width="1.2"/>
+<text x="580.0" y="1252.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#1d2433" text-anchor="start">Что видно на уровне 0</text>
+<text x="580.0" y="1290.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">• Единственный поток, который реально меняет данные реестра, — 1 и 3 (подписанные транзакции); решение о допуске принимает процесс 0 внутри (контракт), а не сущность.</text>
+<text x="580.0" y="1324.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">• Поток 9: конфиденциальный акт ТО в систему не попадает — внутрь проходит только его хеш (защита от раскрытия, STRIDE: I).</text>
+<text x="580.0" y="1358.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">• Потоки 5–6: нарушитель получает только отказ; попытки видны мониторингу и порождают тревогу R1 (поток 10).</text>
+<text x="580.0" y="1392.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#1d2433" text-anchor="start">• Детализация процесса 0 — на уровне 1 (процессы 1.0–6.0, хранилища D1–D6), процесса 3.0 — на уровне 2.</text>
+<circle cx="640" cy="391" r="15" fill="#137a3f" stroke="#fff" stroke-width="2.5"/>
+<text x="640.0" y="396.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<rect x="526.1809" y="246.5" width="227.63820000000013" height="41.0" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="640.0" y="262.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#137a3f" text-anchor="middle">данные этапа ТО: станок, код,</text>
+<text x="640.0" y="279.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#137a3f" text-anchor="middle">время, хеш акта + подпись</text>
+<circle cx="700" cy="525" r="15" fill="#137a3f" stroke="#fff" stroke-width="2.5"/>
+<text x="700.0" y="530.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<rect x="526.7641" y="544.5" width="226.47180000000012" height="41.0" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="640.0" y="560.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#137a3f" text-anchor="middle">этапы транзакции, квитанция,</text>
+<text x="640.0" y="577.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#137a3f" text-anchor="middle">причина ошибки</text>
+<circle cx="660" cy="670" r="15" fill="#2856d8" stroke="#fff" stroke-width="2.5"/>
+<text x="660.0" y="675.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<rect x="528.3933" y="624.5" width="263.2134000000001" height="23.5" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="660.0" y="640.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#2856d8" text-anchor="middle">отзыв записи, пауза, выдача ролей</text>
+<circle cx="660" cy="730" r="15" fill="#2856d8" stroke="#fff" stroke-width="2.5"/>
+<text x="660.0" y="735.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<rect x="553.1064" y="762.5" width="213.78720000000007" height="23.5" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="660.0" y="778.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#2856d8" text-anchor="middle">состояние реестра, события</text>
+<circle cx="660" cy="955" r="15" fill="#c0362c" stroke="#fff" stroke-width="2.5"/>
+<text x="660.0" y="960.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<rect x="488.32039999999995" y="884.5" width="263.35920000000016" height="41.0" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="620.0" y="900.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#c0362c" text-anchor="middle">вызовы без роли, обход UI,</text>
+<text x="620.0" y="917.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#c0362c" text-anchor="middle">неверные данные, нагрузка на RPC</text>
+<circle cx="660" cy="1020" r="15" fill="#c0362c" stroke="#fff" stroke-width="2.5"/>
+<text x="660.0" y="1025.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<rect x="531.1286999999999" y="1064.5" width="317.7426000000002" height="41.0" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="690.0" y="1080.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#c0362c" text-anchor="middle">отказ: AccessControlUnauthorizedAccount</text>
+<text x="690.0" y="1097.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#c0362c" text-anchor="middle">(в блок — status 0, газ потерян)</text>
+<circle cx="1200" cy="400" r="15" fill="#667085" stroke="#fff" stroke-width="2.5"/>
+<text x="1200.0" y="405.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">7</text>
+<rect x="1000.1998" y="266.5" width="119.6004" height="41.0" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="1060.0" y="282.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#667085" text-anchor="middle">хеш документа</text>
+<text x="1060.0" y="299.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#667085" text-anchor="middle">для проверки</text>
+<circle cx="1300" cy="400" r="15" fill="#667085" stroke="#fff" stroke-width="2.5"/>
+<text x="1300.0" y="405.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">8</text>
+<rect x="1339.9717" y="266.5" width="220.05660000000012" height="41.0" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="1450.0" y="282.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#667085" text-anchor="middle">записи ТО, события,</text>
+<text x="1450.0" y="299.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#667085" text-anchor="middle">verifyDocument = true/false</text>
+<circle cx="1840" cy="420" r="15" fill="#6b3fd6" stroke="#fff" stroke-width="2.5"/>
+<text x="1840.0" y="425.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">9</text>
+<rect x="1761.4424" y="314.5" width="237.1152000000001" height="41.0" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="1880.0" y="330.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#6b3fd6" text-anchor="middle">файл акта → keccak256</text>
+<text x="1880.0" y="347.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#6b3fd6" text-anchor="middle">(локально, в сеть — только хеш)</text>
+<circle cx="1840" cy="965" r="15" fill="#0f7a8a" stroke="#fff" stroke-width="2.5"/>
+<text x="1840.0" y="970.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">10</text>
+<rect x="1814.951" y="884.5" width="130.098" height="41.0" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="1880.0" y="900.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#0f7a8a" text-anchor="middle">тревоги R1 / R2,</text>
+<text x="1880.0" y="917.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#0f7a8a" text-anchor="middle">alert.resolved</text>
+<circle cx="1840" cy="1025" r="15" fill="#0f7a8a" stroke="#fff" stroke-width="2.5"/>
+<text x="1840.0" y="1030.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">11</text>
+<rect x="1780.165" y="1094.5" width="179.67000000000004" height="41.0" rx="4" fill="#fff" fill-opacity="0.93" stroke="none" stroke-width="0"/>
+<text x="1870.0" y="1110.0" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#0f7a8a" text-anchor="middle">реакция: pause(), отзыв</text>
+<text x="1870.0" y="1127.5" font-family="Inter, 'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#0f7a8a" text-anchor="middle">ролей, резервный RPC</text>
+</svg>

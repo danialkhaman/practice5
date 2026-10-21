@@ -1,0 +1,54 @@
+=== M1: снят onlyRole(ADMIN_ROLE) с revokeLastService ===
+84:    function revokeLastService(bytes32 machineId) external {
+{"timestamp":1792596910,"event":"failure","invariant":"invariant_I1_OnlyAuthorizedRolesChangeState","target":"test/Security.invariant.t.sol:SecurityInvariantTest","reason":"I1: unauthorized call changed state"}
+[PASS] testFuzz_OnlyTechnicianCanRegister(address) (runs: 1000, μ: 53711, ~: 53711)
+[PASS] testFuzz_RegisterService_StoresData(bytes32,uint32,uint64,bytes32) (runs: 1000, μ: 143429, ~: 143639)
+[PASS] test_Pause_BlocksRegister() (gas: 238870)
+[PASS] test_Pause_OnlyAdmin() (gas: 36913)
+[PASS] test_RegisterService_EmitsEvent() (gas: 134146)
+[PASS] test_RegisterService_RevertIfNotTechnician() (gas: 38240)
+[PASS] test_RegisterService_RevertOnEmptyMachineId() (gas: 37733)
+[PASS] test_RegisterService_RevertOnFutureTimestamp() (gas: 38402)
+[PASS] test_RegisterService_RevertOnZeroCode() (gas: 37828)
+[PASS] test_RegisterService_Success() (gas: 156523)
+[FAIL: next call did not revert as expected] test_RevokeLastService_OnlyAdmin() (gas: 184777)
+[PASS] test_RevokeLastService_RevertOnDoubleRevoke() (gas: 209510)
+[PASS] test_VerifyDocument() (gas: 144242)
+Suite result: FAILED. 12 passed; 1 failed; 0 skipped; finished in 39.19ms (78.59ms CPU time)
+[FAIL: Error != expected error: NothingToRevoke(0xc53751646535ef287bb4cf91dcfc08c7fb1e2ffacdc240b48360dc6eeb8b9485) != AccessControlUnauthorizedAccount(0x30a78cE330A4A53Db6aF6E978422F4Dca9f152cE, 0xa49807205ce4d355092ef5a8a18f56e8913cf4a201fbe287825b095693c21775); counterexample: calldata=0xc7a2967100000000000000000000000030a78ce330a4a53db6af6e978422f4dca9f152cec53751646535ef287bb4cf91dcfc08c7fb1e2ffacdc240b48360dc6eeb8b948500000000000000000000000000000000000000000000000000000000000023c4000000000000000000000000000000000000000000000000004a94f7d47c9db1 args=[0x30a78cE330A4A53Db6aF6E978422F4Dca9f152cE, 0xc53751646535ef287bb4cf91dcfc08c7fb1e2ffacdc240b48360dc6eeb8b9485, 9156, 20992940419358129 [2.099e16]]] testFuzz_F1_NoRoleCannotWrite(address,bytes32,uint32,uint64) (runs: 0, μ: 0, ~: 0)
+[PASS] testFuzz_F2_RegisterRoundTrip(bytes32,uint32,uint64,bytes32,bytes32) (runs: 1000, μ: 175342, ~: 175355)
+[PASS] testFuzz_F3_FutureTimestampAlwaysReverts(uint64) (runs: 1000, μ: 38424, ~: 38372)
+Suite result: FAILED. 2 passed; 1 failed; 0 skipped; finished in 39.14ms (80.20ms CPU time)
+[FAIL: I1: unauthorized call changed state] invariant_I1_OnlyAuthorizedRolesChangeState
+[FAIL: I1: unauthorized call changed state] invariant_I1_OnlyAuthorizedRolesChangeState
+[PASS] invariant_I2_CountersConsistent
+[PASS] invariant_I3_PauseBlocksWrites
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 2.66s (2.65s CPU time)
+Ran 3 test suites in 2.66s (2.74s CPU time): 14 tests passed, 3 failed, 0 skipped (17 total tests)
+Encountered 1 failing test in test/MaintenanceRegistry.t.sol:MaintenanceRegistryTest
+[FAIL: next call did not revert as expected] test_RevokeLastService_OnlyAdmin() (gas: 184777)
+Encountered 1 failing test in test/Security.fuzz.t.sol:SecurityFuzzTest
+[FAIL: Error != expected error: NothingToRevoke(0xc53751646535ef287bb4cf91dcfc08c7fb1e2ffacdc240b48360dc6eeb8b9485) != AccessControlUnauthorizedAccount(0x30a78cE330A4A53Db6aF6E978422F4Dca9f152cE, 0xa49807205ce4d355092ef5a8a18f56e8913cf4a201fbe287825b095693c21775); counterexample: calldata=0xc7a2967100000000000000000000000030a78ce330a4a53db6af6e978422f4dca9f152cec53751646535ef287bb4cf91dcfc08c7fb1e2ffacdc240b48360dc6eeb8b948500000000000000000000000000000000000000000000000000000000000023c4000000000000000000000000000000000000000000000000004a94f7d47c9db1 args=[0x30a78cE330A4A53Db6aF6E978422F4Dca9f152cE, 0xc53751646535ef287bb4cf91dcfc08c7fb1e2ffacdc240b48360dc6eeb8b9485, 9156, 20992940419358129 [2.099e16]]] testFuzz_F1_NoRoleCannotWrite(address,bytes32,uint32,uint64) (runs: 0, μ: 0, ~: 0)
+Encountered 1 failing test in test/Security.invariant.t.sol:SecurityInvariantTest
+[FAIL: I1: unauthorized call changed state] invariant_I1_OnlyAuthorizedRolesChangeState
+[FAIL: I1: unauthorized call changed state] invariant_I1_OnlyAuthorizedRolesChangeState
+[PASS] invariant_I2_CountersConsistent
+[PASS] invariant_I3_PauseBlocksWrites
+Encountered a total of 3 failing tests, 14 tests succeeded
+
+=== M2: снят whenNotPaused с registerService ===
+60:    ) external onlyRole(TECHNICIAN_ROLE) whenNotPaused {
+    ) external onlyRole(TECHNICIAN_ROLE) {
+[FAIL: I3: registration succeeded while paused] invariant_I3_PauseBlocksWrites
+[PASS] invariant_I1_OnlyAuthorizedRolesChangeState
+[PASS] invariant_I2_CountersConsistent
+[FAIL: I3: registration succeeded while paused] invariant_I3_PauseBlocksWrites
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 3.42s (3.41s CPU time)
+Ran 1 test suite in 3.42s (3.42s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+[FAIL: I3: registration succeeded while paused] invariant_I3_PauseBlocksWrites
+[PASS] invariant_I1_OnlyAuthorizedRolesChangeState
+[PASS] invariant_I2_CountersConsistent
+[FAIL: I3: registration succeeded while paused] invariant_I3_PauseBlocksWrites
+
+=== восстановлен исходный контракт ===
+Ran 3 test suites in 2.87s (2.98s CPU time): 17 tests passed, 0 failed, 0 skipped (17 total tests)

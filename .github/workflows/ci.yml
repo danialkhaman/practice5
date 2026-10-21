@@ -1,0 +1,103 @@
+# CI-конвейер ПР №5 (вариант 8): установка зависимостей → сборка → автотесты →
+# статический анализ (Slither) → проверка зависимостей (npm audit, версия OpenZeppelin).
+# Любой непройденный шаг останавливает конвейер (красный статус).
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# минимальные права токена GITHUB_TOKEN: только чтение кода
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  contracts:
+    name: Контракт — сборка, тесты, Slither
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      FOUNDRY_PROFILE: ci # больше прогонов fuzz/invariant (contracts/foundry.toml)
+    defaults:
+      run:
+        working-directory: contracts
+    steps:
+      - name: Код и подмодули (forge-std, OpenZeppelin)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Установка Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: v1.5.1
+
+      - name: Версии инструментов
+        run: forge --version && anvil --version
+
+      - name: Проверка зависимости OpenZeppelin (>= 5.4.0)
+        run: bash ../scripts/check-oz-version.sh lib/openzeppelin-contracts/package.json 5.4.0
+
+      - name: Сборка контракта
+        run: forge build --sizes
+
+      - name: Тесты Foundry (unit, fuzz, 3 инварианта)
+        run: forge test -vv
+
+      - name: Python для Slither
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Установка Slither
+        run: pip install slither-analyzer==0.11.6
+
+      - name: Статический анализ Slither (порог — Medium)
+        run: slither . --filter-paths "lib/|test/" --fail-medium
+
+  web:
+    name: dApp — зависимости, сборка, интеграционные тесты
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - name: Код и подмодули
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Установка Foundry (anvil для интеграционных тестов)
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: v1.5.1
+
+      - name: Сборка контракта (артефакт для деплоя в тестах)
+        working-directory: contracts
+        run: forge build
+
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Установка зависимостей (npm ci по package-lock.json)
+        run: npm ci
+
+      - name: Проверка зависимостей (npm audit, порог — high)
+        run: npm audit --audit-level=high
+
+      - name: Сборка dApp (vite build)
+        run: npm run build
+
+      - name: Интеграционные тесты (Anvil) и тесты правил мониторинга
+        run: npm test
