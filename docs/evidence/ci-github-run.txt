@@ -1,0 +1,49 @@
+GitHub Actions · danialkhaman/practice5 · workflow ci · run #1 (id 39631272112) · commit a3e220d · push в main
+https://github.com/danialkhaman/practice5/actions/runs/39631272112
+Итог: Success, общая длительность 55 s
+
+=== job «Контракт — сборка, тесты, Slither» (50 s) — success ===
+16:03:45 forge Version: 1.5.1-v1.5.1
+16:03:45 ##[group]Run bash ../scripts/check-oz-version.sh lib/openzeppelin-contracts/package.json 5.4.0
+16:03:45 OK: OpenZeppelin Contracts 5.7.0 >= 5.4.0
+16:03:45 ##[group]Run forge build --sizes
+16:03:47 Compiler run successful!
+16:03:47 ##[group]Run forge test -vv
+16:03:47 Suite result: ok. 13 passed; 0 failed; 0 skipped; finished in 440.70ms (710.16ms CPU time)
+16:03:48 [PASS] testFuzz_F1_NoRoleCannotWrite(address,bytes32,uint32,uint64) (runs: 5000, μ: 35839, ~: 35629)
+16:03:48 [PASS] testFuzz_F2_RegisterRoundTrip(bytes32,uint32,uint64,bytes32,bytes32) (runs: 5000, μ: 117181, ~: 116963)
+16:03:48 [PASS] testFuzz_F3_FutureTimestampAlwaysReverts(uint64) (runs: 5000, μ: 16697, ~: 16664)
+16:03:48 Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 670.38ms (1.14s CPU time)
+16:03:59 [PASS] invariant_I1_OnlyAuthorizedRolesChangeState() (runs: 512, calls: 65536, reverts: 0)
+16:03:59 [PASS] invariant_I2_CountersConsistent() (runs: 512, calls: 65536, reverts: 0)
+16:03:59 [PASS] invariant_I3_PauseBlocksWrites() (runs: 512, calls: 65536, reverts: 0)
+16:03:59 Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 11.76s (21.84s CPU time)
+16:03:59 Ran 3 test suites in 11.76s (12.87s CPU time): 19 tests passed, 0 failed, 0 skipped (19 total tests)
+16:04:10 Successfully installed ... slither-analyzer-0.11.6 ...
+16:04:10 ##[group]Run slither . --filter-paths "lib/|test/" --fail-medium
+16:04:11 Detector: timestamp
+16:04:11 MaintenanceRegistry.registerService(bytes32,uint32,uint64,bytes32) (src/MaintenanceRegistry.sol#55-81) uses timestamp for comparisons
+16:04:11 INFO:Slither:. analyzed (7 contracts with 102 detectors), 1 result(s) found
+
+=== job «dApp — зависимости, сборка, интеграционные тесты» (36 s) — success ===
+16:03:41 forge Version: 1.5.1-v1.5.1 · anvil Version: 1.5.1-v1.5.1
+16:03:41 ##[group]Run forge build
+16:03:42 Compiler run successful!
+16:03:47 ##[group]Run npm ci
+16:03:50 added 52 packages, and audited 53 packages in 4s
+16:03:50 found 0 vulnerabilities
+16:03:50 ##[group]Run npm audit --audit-level=high
+16:03:51 found 0 vulnerabilities
+16:03:51 ##[group]Run npm run build
+16:03:51 ✓ 170 modules transformed.
+16:03:51 ✓ built in 231ms
+16:03:51 ##[group]Run npm test
+16:03:53  ✓ test/integration.test.js > Положительные сценарии > IT1 … IT2
+16:03:53  ✓ test/integration.test.js > Негативные сценарии и авторизация > IT3 … IT9
+16:03:54  ✓ test/integration.test.js > События и инварианты > IT10 … IT12
+16:03:54  ✓ monitor/rules.test.js > R1 (5 тестов), R2 (2 теста), штатный сценарий (1 тест)
+16:03:54  Test Files  2 passed (2)
+16:03:54       Tests  20 passed (20)
+16:03:54    Duration  2.56s
+
+Аннотации: 2 warnings (Node.js 20 deprecated для actions/checkout@v4, setup-node@v4, setup-python@v5 — принудительно запущены на Node.js 24), 2 notices.
